@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Doctor_Account</title>
+    <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body>
+    <h1>Create Doctor_Account</h1>
+    <form action="createaccount_doctor.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required value="<?=$name?>"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required value="<?=$email?>"><br>
+    <!--error email-->
+    <span class="error"></span>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required ><br>
+    <!--error passwoerd length-->
+    <span class="error"></span>
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required><br>
+    <!--error-->
+    <span class="error"></span>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required value=><br>
+    <input type="submit" value="Create Account" name="add_doctor">
+    </form>
+</body>
+
+</html>

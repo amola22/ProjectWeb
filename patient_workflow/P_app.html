@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduling</title>
+    <link rel="stylesheet" href="../css/p_app.css">
+</head>
+
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="P_dec.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="pre.html">Prescription</a></li>
+            <li><a href="../service_workflow/service.html">Services</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+        </nav>
+    <h1>Appointment Scheduling</h1>
+    <form action="P_app.html" method="post"  >
+        <label for="date"> Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time"> Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <input type="submit" value="Search" name="search_available_doctor">
+    </form>
+
+    <h2>Doctor Availability</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Doctor</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Data From</th>
+                <th>Date to</th>
+                <th>Time From</th>
+                <th>Time to</th>
+                <th>Book</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td> ?=$doctor['name']?></td>
+                <td> ?=$doctor['email']?></td>
+                <td> ?=$doctor['phone']?></td>
+                <td>?=$doctor['date_from']?></td>
+                <td>?=$doctor['date_to']?></td>
+                <td>?=$doctor['time_from']?></td>
+                <td>?=$doctor['time_to']?></td>
+                <td><a href="#>">Booking</a></td>
+            </tr>
+           
+                <tr>
+                    <td> no doctor found</td>
+                </tr>
+                
+            
+        </tbody>
+    </table>
+</body>
+
+</html>

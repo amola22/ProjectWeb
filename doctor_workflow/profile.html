@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="../css/profile.css?">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="P_dec.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="pre.html">Prescription</a></li>
+                <li><a href="../service_workflow/service.html">Services</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div class="protifle">
+            <div class="profile-picture">
+                <img src="#" alt="My Profile Picture">
+            </div>
+            <form class="button" method="post" action="profile.html" enctype="multipart/form-data">
+                <label for="upload_image">Upload your profile image </label>
+                <input type="file" id="upload_image" class="file" name="profile_img" required><br>
+                <!--error image(size)-->
+               
+                  
+                <input type="submit" value="Update image" class="upload" name="update_profile_image">
+
+            </form>
+        </div>
+    </div>
+    <div class="profile-details">
+        <div class="profile-details">
+            <h1>Your Profile</h1>
+            <p>My Name: doctor->name ?></p>
+            <p>My Phone: doctor->phone ?></p>
+            <p>My Email: doctor->email ?></p>
+        </div>
+    </div>
+</body>
+
+</html>

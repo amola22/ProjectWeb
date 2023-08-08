@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/profile.css?">
+
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+            <ul>
+            <li><a href="P_dec.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="pre.html">Prescription</a></li>
+                <li><a href="../service_workflow/service.html">Services</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+<div class="container">
+    <div class="protifle">
+        <div class="profile-picture">
+            <img src="?= $_SESSION['patient']->profile_image ?>" alt="My Profile Picture">
+        </div>
+        <form class="button" method="post" action="profile.html" enctype="multipart/form-data">
+                <label for="upload_image">Upload your profile image </label>
+                <input type="file" id="upload_image" class="file" name="profile_img" required><br>
+              
+                <input type="submit" value="Update image" class="upload" name="update_profile_image">
+
+            </form>
+    </div>
+</div>
+    <div class="profile-details">
+        <div class="profile-details">
+            <h1>Your Profile</h1>
+            <p>My Namepatient-> name?></p>
+            <p>My Phone: patient phone?></p>
+            <p>My Email: patient-> email?></p>
+        </div>
+</div>
+</body>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?php
+ session_start();
+ if(!isset($_SESSION['patient'])){
+     header('location:../home.php');
+     exit;
+ }
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "test2";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Prepare and bind statement
+$id=$_GET['id'];
+$MRN=$_GET['MRN'];
+
+$stmt = $conn->prepare("UPDATE patient SET doctor_id=? WHERE MRN=?");
+$stmt->bind_param("ii", $id,$MRN);
+
+// Execute statement
+if ($stmt->execute() === TRUE) {
+    echo "Record updated successfully";
+    header('location:succ_app.php');
+
+} else {
+    echo "Error updating record: " . $conn->error;
+}
+
+// Close connection
+$conn->close();

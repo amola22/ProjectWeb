@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../images/img.webp);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar {
+    background-color: rgb(56, 31, 6);
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 15;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 25px;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar ul li:hover {
+    border-radius: 8px;
+    border-width: 3px;
+    border-style: double;
+    border-color: aliceblue;
+
+}
+.container {
+    max-width: 100%;
+    margin: auto;
+    margin-top:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.protifle{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.profile-picture {
+    width: 400px;
+    height: 330px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+    border-style:double ;
+    border-radius:50%;
+    border-color: antiquewhite;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;   
+}
+
+
+.profile-details h1 {
+    margin-left: 29px;
+    font-size: 36px;
+    color: rgb(105, 65, 25);
+}
+.profile-details p {
+    margin-left: 29px;
+    font-size: 26px;
+    color: rgb(56, 31, 6);
+}
+.button {
+    margin: 9px;
+    padding: 10px ;
+    background-color: rgb(56, 31, 6);
+    color: white;
+    text-align: center;
+}
+.button .file{
+    padding: 0 0 0 30px;
+}
+
+.button:hover {
+    background-color: rgb(209, 126, 17);
+}
+.upload{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+
